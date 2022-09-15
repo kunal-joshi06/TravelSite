@@ -12,18 +12,9 @@ This repo contains a work in progress Ecommerce responsive made with Next.js, Re
 - Register page: https://user-images.githubusercontent.com/101640035/190430816-37a14011-9a98-422d-8562-02b1e328d65f.png
 - 404 page: /page-not-found
 
-## Screenshots
-
-
-
-
- 
-
-
 
 ## Next TO-DO
 
-- [X] Checkout page
 - [ ] Add Facebook login
 - [ ] Add Google login
 - [ ] Add Proptypes on components
