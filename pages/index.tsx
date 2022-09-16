@@ -4,12 +4,17 @@ import ProductsFeatured from '../components/destinations/products-featured';
 import Footer from '../components/footer';
 import Subscribe from '../components/subscribe';
 import Link from 'next/link';
+import Modal from '../components/modal';
+
 
 const IndexPage = () => {
   return (
+    <>
+    
     <Layout>
+    
       <PageIntro />
-
+      <Modal/>
       <section className="featured">
         <div className="container">
           <article style={{backgroundImage: 'url(/images/featuredDestination.jpg)'}} className="featured-item featured-item-large">
@@ -79,8 +84,11 @@ const IndexPage = () => {
       <Subscribe />
       <Footer />
     </Layout>
+    </>
+    
   )
 }
+
 
 
 export default IndexPage
