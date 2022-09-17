@@ -40,9 +40,9 @@ const Modal = () => {
                                     <textarea className="form-control bg-light border-0 messageBox"  placeholder="Message"></textarea>
                                 </div>
                                 <div className="col-12">
-                                    <Link href='/under'>
-                                    <button className="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                    </Link>
+                                    
+                                    <button className="btn btn-primary w-100 py-3" type="submit" data-dismiss="modal">Send Message</button>
+                              
                                 </div>
                             </div>
                         </form>
