@@ -4,8 +4,8 @@ import ProductsFeatured from '../components/destinations/products-featured';
 import Footer from '../components/footer';
 import Subscribe from '../components/subscribe';
 import Link from 'next/link';
-import Modal from '../components/modal';
-
+import Modal from '../components/modal/index'
+import '../components/modal/modal'
 
 const IndexPage = () => {
   return (
