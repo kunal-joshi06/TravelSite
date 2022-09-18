@@ -5,19 +5,20 @@ import React from 'react'
 // import Swiper core and required components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-let slidesPerView = 1.3;
+
+let slidesPerView = 1;
 let centeredSlides = true;
 let spaceBetween = 30;
 if (process.browser) {
   if(window.innerWidth > 768) {
-    slidesPerView = 3;
+    slidesPerView = 2;
     spaceBetween = 35;
-    centeredSlides = false;
+    centeredSlides = true;
   }
   if(window.innerWidth > 1024) {
-    slidesPerView = 4;
+    slidesPerView = 2;
     spaceBetween = 65;
-    centeredSlides = false;
+    centeredSlides = true;
   }
 }
 
@@ -30,13 +31,16 @@ const ProductsCarousel = ({ products }: ProductsCarouselType) => {
 
   return (
     <div className="products-carousel">
+      
       <Swiper 
+      
       spaceBetween={spaceBetween} 
       loop={true} 
+      navigation={true}
       centeredSlides={centeredSlides} 
       watchOverflow={true} 
       slidesPerView={slidesPerView} 
-      className="swiper-wrapper">
+      className="swiper-container">
         {products.map(item => (
           <SwiperSlide key={item.id}>
             <ProductItem 
@@ -50,8 +54,10 @@ const ProductsCarousel = ({ products }: ProductsCarouselType) => {
               images={item.images} 
             />
           </SwiperSlide>
+          
         ))}
       </Swiper>
+      
     </div>
   )
 }

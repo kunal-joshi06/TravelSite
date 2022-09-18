@@ -18,6 +18,7 @@ const ProductsFeatured = () => {
         </header>
 
         <ProductsCarousel products={data} />
+        
       </div>
     </section>
   )
