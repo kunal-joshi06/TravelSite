@@ -4,7 +4,6 @@ import CheckoutStatus from '../../components/checkout-status';
 import CheckoutItems from '../../components/checkout/items';
 import { RootState } from 'store';
 import Link from 'next/link';
-import Image from 'next/image';
 const CheckoutPage = () => {
 
   const priceTotal = useSelector((state: RootState) => {
