@@ -1695,6 +1695,7 @@ h1,h2,h3,h4,h5 {
   &.checkbox--square {
     position: relative;
     width: calc(100%/6);
+    margin-top:5px;
     input:checked + .checkbox__check {
       background-color: #000;
       border-color: #000;

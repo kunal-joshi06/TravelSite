@@ -72,12 +72,6 @@ const Header = ({ isErrorPage }: HeaderType) => {
              <Link href="/stays">
              Stays & Accomodation
             </Link> 
-          <Link href="/about">
-          <a>About Us</a>
-          </Link>
-          <Link href="/contact">
-          <a>Contact Us</a>
-          </Link>
           
         </nav>
 

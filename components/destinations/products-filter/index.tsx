@@ -55,7 +55,8 @@ const ProductsFilter = () => {
                 type="square" 
                 key={type.id} 
                 name="product-size" 
-                label={type.label} />
+                label={type.label}
+                style={{marginTop :"-5px"}} />
             ))}
           </div>
         </div>
