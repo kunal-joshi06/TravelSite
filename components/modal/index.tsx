@@ -1,16 +1,10 @@
-import Link from 'next/link';
+
 import React from 'react';
 
 
 const Modal = () => {
   return (
 <>
-    
-
-{/* <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button> */}
-
 
 <div className="modal fade" id="myModal" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div className="modal-dialog modal-dialog-centered" role="document">

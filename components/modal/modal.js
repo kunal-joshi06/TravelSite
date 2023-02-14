@@ -1,5 +1,5 @@
-console.log("modal script loaded successfully")
+// console.log("modal script loaded successfully")
 
-setTimeout(function() {
-    $('#myModal').modal();
-}, 3000);
+// setTimeout(function() {
+//     $('#myModal').modal();
+// }, 3000);
