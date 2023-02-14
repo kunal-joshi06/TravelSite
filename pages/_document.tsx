@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import Document, { Head, Main, NextScript, DocumentInitialProps, DocumentContext, Html } from 'next/document'
 import { GA_TRACKING_ID } from '../utils/gtag';
-// import Script from 'next/script';
+import Script from 'next/script';
 
 
 interface DocumentProps extends DocumentInitialProps {
@@ -27,7 +27,7 @@ export default class CustomDocument extends Document<DocumentProps> {
     return (
       <Html lang="en">
         <Head>
-        {/* <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossOrigin="anonymous"/> 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossOrigin="anonymous"/>
 
@@ -35,7 +35,7 @@ export default class CustomDocument extends Document<DocumentProps> {
 
 
 
-<Script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossOrigin="anonymous"></Script> */}
+<Script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossOrigin="anonymous"></Script>
           {/* We only want to add the scripts if in production */}
           {isProduction && (
             <Fragment>
