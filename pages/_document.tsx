@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import Document, { Head, Main, NextScript, DocumentInitialProps, DocumentContext, Html } from 'next/document'
 import { GA_TRACKING_ID } from '../utils/gtag';
-import Script from 'next/script';
+// import Script from 'next/script';
 
 
 interface DocumentProps extends DocumentInitialProps {
