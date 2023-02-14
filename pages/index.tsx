@@ -14,7 +14,7 @@ const IndexPage = () => {
     <Layout>
     
       <PageIntro />
-      <Modal/>
+      {/* <Modal/> */}
       <section className="featured">
         <div className="container">
           <article style={{backgroundImage: 'url(/images/featuredDestination.jpg)'}} className="featured-item featured-item-large">
